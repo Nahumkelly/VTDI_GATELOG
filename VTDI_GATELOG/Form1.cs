@@ -16,5 +16,42 @@ namespace VTDI_GATELOG
         {
             InitializeComponent();
         }
+
+        private void logInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LogInForm login = new LogInForm();
+            login.MdiParent = this;
+            login.Show();
+        }
+
+        private void userManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("User Management Click");
+        }
+
+        private void schedulingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Scheduling Click");
+        }
+
+        private void guestListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Guest List Click");
+        }
+
+        private void gateInOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gate Out and In Click");
+        }
+
+        private void gateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gate Report Click");
+        }
+
+        private void userLagsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("User Lags Report Click");
+        }
     }
 }
